@@ -1,4 +1,4 @@
-# Trabalho-Final - Labirinto e Editor de Mapas
+# Trabalho Final - Labirinto e Editor de Mapas
 
 Trabalho final desenvolvido em C para a disciplina de Programação de Computadores ||, ministrada no segundo semestre do curso de Análise e Desenvolvimento de Sistemas 
 do Instituto Federal do Paraná - IFPR.
