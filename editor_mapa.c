@@ -143,7 +143,7 @@ int main() {
 	
 	char nome[30];
 	FILE *nomes, *arq;
-    system("clear");
+    	system("clear");
 	printf("\t\t  EDITOR DE MAPAS - GAME RESGATE\n");
 	printf("\n\t- Digite um nome para salvar o mapa: ");
 	__fpurge(stdin);
@@ -154,12 +154,12 @@ int main() {
 	fclose(nomes);
 	
 	arq = fopen(nome, "a+");
-    fwrite(&mapa, sizeof(mapa), 1, arq);
+    	fwrite(&mapa, sizeof(mapa), 1, arq);
     
-    if(arq != NULL) {
-        printf("\n\t- [OK] O cenario [%s] foi salvo com sucesso!", nome);
-    }
-    fclose(arq);
+    	if(arq != NULL) {
+        	printf("\n\t- [OK] O cenario [%s] foi salvo com sucesso!", nome);
+    	}
+    	fclose(arq);
 
 	printf("\n");
 	return 0;
@@ -187,8 +187,7 @@ int checar_figuras() {
     }
 }
 
-// preenche o mapa espelho e tambem guarda a posicao inicial
-void init_espelho() {
+void init_espelho() { // preenche o mapa espelho e tambem guarda a posicao inicial
     
     for (int i=0; i<ALT; i++) {
         for (int j=0; j<LAR; j++) {
@@ -216,6 +215,7 @@ Explora todas as direcoes: esquerda, baixo, direita, cima. Comeca explorando uma
 encontrar uma parede, entao retorna e passa a explorar a proxima direcao. Retorna 
 verdadeiro caso consiga fazer o caminho do inicio ate o animal e do animal de volta ate o inicio. 
 Caso a recursao nunca chegar ate o animal, retorna falso e entao finaliza. */ 
+
 int achar_caminho(int lin_inicial, int col_inicial) {
 
 	if (mapa_esp[lin_inicial][col_inicial] == ANIMAL) {
